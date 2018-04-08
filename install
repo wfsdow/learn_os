@@ -1,0 +1,5 @@
+
+
+sudo apt-get install bochs -y 
+sudo apt-get install bochs-x -y 
+sudo apt-get install bochs-sdl -y
