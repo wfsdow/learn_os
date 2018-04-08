@@ -10,10 +10,10 @@ romimage: file=/usr/share/bochs/BIOS-bochs-latest
 vgaromimage: file=/usr/share/vgabios/vgabios.bin
 
 # what disk images will be used
-floppya: 1_44=a.img, status=inserted
+#floppya: 1_44=a.img, status=inserted
 
 # choose the boot disk.
-boot: floppy
+boot: disk
 
 # where do we send log messages?
 # log: bochsout.txt
@@ -23,3 +23,5 @@ mouse: enabled=0
 
 # enable key mapping, using US layout as default.
 #keyboard_mapping: enabled=1, map=/usr/share/bochs/keymaps/x11-pc-us.map
+
+ata0-master: type=disk, path="hd60M.img", mode=flat, cylinders=121, heads=16, spt=63
