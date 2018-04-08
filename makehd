@@ -1,0 +1,3 @@
+#!/bin/bash
+
+bximage -hd -mode="float" -size=60 -q hd60M.img
